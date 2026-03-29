@@ -61,3 +61,12 @@ Cuando haya cambios, documentar como mínimo:
 - Riesgo/limitación: falta definir propietarios por dimensión y flujo de despliegue formal.
 - Aprendizaje clave para próximos agentes: cada cambio debe cerrar con doble actualización (`README.md` + `AGENTS.md`) y una lección concreta.
 - Acción sugerida siguiente: completar responsables, runbooks de incidentes y política de backups/restores.
+
+### 2026-03-29 — Diagramas Mermaid por dimensión documental
+- Contexto: se solicitó enriquecer el README para incluir diagramas Mermaid en las dimensiones donde aportan claridad operativa.
+- Cambio aplicado: se agregaron diagramas Mermaid en dimensiones de arquitectura, datos, integraciones, operación, despliegue, QA, monitoreo, incidentes, gobierno, onboarding y aprendizaje.
+- Dimensiones README impactadas: [3, 4, 7, 8, 9, 10, 11, 12, 16, 18, 19, 20].
+- Validación realizada: verificación de sintaxis Markdown/Mermaid por inspección textual y revisión de diff.
+- Riesgo/limitación: algunos renderizadores Markdown no soportan Mermaid; en ese caso se verá el bloque fuente.
+- Aprendizaje clave para próximos agentes: priorizar diagramas simples por flujo para maximizar mantenibilidad documental.
+- Acción sugerida siguiente: validar render en la plataforma objetivo (GitHub/GitLab/visor interno) y ajustar estilos de nodos si es necesario.
