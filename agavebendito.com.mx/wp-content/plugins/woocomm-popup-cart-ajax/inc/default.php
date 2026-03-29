@@ -26,7 +26,7 @@ if ( ! function_exists( 'wcspc_get_default_options' ) ) :
 		$defaults['_wcspc_position']					= esc_attr('01');
 		$defaults['_wcspc_primary_colors']				= esc_attr('#ffffff');
 		$defaults['_wcspc_secondary_colors']			= esc_attr('#a7a7a7');
-		$defaults['_wcspc_bg_colors']					= esc_attr('#9b5c8f');
+		$defaults['_wcspc_bg_colors']					= esc_attr('#447821');
 		$defaults['_wcspc_bg_image']					= '';
 		$defaults['_wcspc_attributes']					= esc_attr('no');
 		$defaults['_wcspc_total']						= esc_attr('yes');

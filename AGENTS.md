@@ -70,3 +70,12 @@ Cuando haya cambios, documentar como mínimo:
 - Riesgo/limitación: el valor activo en producción puede estar sobrescrito por opciones guardadas en base de datos de WordPress.
 - Aprendizaje clave para próximos agentes: para cambios de color en este plugin, revisar defaults, CSS base y opciones persistidas en admin.
 - Acción sugerida siguiente: confirmar en `/wp-admin/admin.php?page=wcspc` y guardar ajustes para propagar el valor en la opción persistida.
+
+### 2026-03-29 — Corrección de color objetivo a #447821
+- Contexto: el requerimiento final corrigió el color deseado de `#9b5c8f` a `#447821`.
+- Cambio aplicado: actualización del valor por defecto `_wcspc_bg_colors` y de fallbacks visuales a `rgba(68, 120, 33, 0.97)`.
+- Dimensiones README impactadas: [2, 3, 11, 15, 20].
+- Validación realizada: búsqueda de valores antiguos/nuevos con `rg` y confirmación por `git diff`.
+- Riesgo/limitación: si existe valor persistido distinto en BD, el admin/frontend puede mostrar ese valor hasta guardar la configuración.
+- Aprendizaje clave para próximos agentes: en este plugin, el color debe actualizarse en default, render dinámico y CSS para mantener consistencia.
+- Acción sugerida siguiente: abrir `/wp-admin/admin.php?page=wcspc`, guardar cambios y limpiar caché para reflejar `#447821`.

@@ -160,3 +160,11 @@ Un cambio se considera completo solo si:
 - Mitigación aplicada: se modificaron únicamente valores de color de fallback, sin tocar lógica de carrito ni flujo de checkout.
 - Validación ejecutada: búsqueda por código (`rg`) para confirmar el origen y verificación de diferencias con `git diff`.
 - Lección aprendida: en este plugin existen colores de fallback en PHP y CSS; conviene mantener ambos sincronizados para evitar inconsistencias visuales.
+
+### Actualización 2026-03-29 (ajuste solicitado)
+- Cambio realizado: corrección del color objetivo del mini-cart de `#9b5c8f` a `#447821` (equivalente `rgba(68, 120, 33, 0.97)`) en defaults y fallbacks visuales.
+- Dimensiones impactadas: [2, 3, 11, 15, 20]
+- Riesgo introducido: bajo; cambio visual acotado al plugin `woocomm-popup-cart-ajax`.
+- Mitigación aplicada: se ajustaron de forma consistente `inc/default.php`, `inc/class-frontend.php` y `assets/css/frontend.css`.
+- Validación ejecutada: verificación de ocurrencias con `rg` y revisión de cambios con `git diff`.
+- Lección aprendida: confirmar el color final solicitado antes de cerrar; en este plugin hay múltiples puntos de color (default + fallback dinámico + CSS).
