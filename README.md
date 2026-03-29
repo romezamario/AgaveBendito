@@ -30,10 +30,30 @@ Este repositorio contiene una instalación de WordPress para `agavebendito.com.m
 - Embudo de compra/checkout (si aplica).
 - Integraciones de marketing/comunicación.
 
+```mermaid
+flowchart LR
+    Inicio[Visitante llega al sitio] --> Catalogo[Explora catálogo]
+    Catalogo --> Producto[Detalle de producto]
+    Producto --> Carrito[Carrito]
+    Carrito --> Checkout[Checkout WooCommerce]
+    Checkout --> Pago[Pasarela de pago]
+    Pago --> Confirmacion[Confirmación + email]
+```
+
 ### 4) Arquitectura técnica
 - Estructura de carpetas clave.
 - Dependencias de servidor (PHP/MySQL/Apache/Nginx).
 - Configuración crítica de arranque (`wp-config.php`).
+
+```mermaid
+flowchart TD
+    Cliente[Navegador] --> Web[Servidor Web]
+    Web --> WP[WordPress Core]
+    WP --> Tema[Tema activo]
+    WP --> Plugins[Plugins]
+    WP --> DB[(MySQL/MariaDB)]
+    Plugins --> Ext[Servicios externos]
+```
 
 ### 5) Configuración y entorno
 - Variables/constantes relevantes (sin exponer valores sensibles).
@@ -50,30 +70,84 @@ Este repositorio contiene una instalación de WordPress para `agavebendito.com.m
 - Política de respaldo y restauración.
 - Manejo de logs y retención.
 
+```mermaid
+erDiagram
+    USUARIOS ||--o{ ORDENES : realiza
+    ORDENES ||--|{ ITEMS_ORDEN : contiene
+    PRODUCTOS ||--o{ ITEMS_ORDEN : referencia
+    USUARIOS ||--o{ FORMULARIOS : envia
+```
+
 ### 8) Integraciones externas
 - Servicios conectados (pagos, email, analítica, CRM, etc.).
 - Contratos/API dependientes.
 - Impacto ante caída de terceros.
+
+```mermaid
+flowchart LR
+    WP[WordPress/WooCommerce] --> Pago[Gateway de pago]
+    WP --> Email[Servicio email transaccional]
+    WP --> Analytics[Analítica]
+    WP --> CRM[CRM/Marketing]
+```
 
 ### 9) Operación diaria
 - Tareas recurrentes (actualización de plugins, revisión de órdenes, limpieza de caché).
 - Checklist de salud del sitio.
 - Responsable sugerido por actividad.
 
+```mermaid
+flowchart TD
+    A[Inicio de día] --> B[Revisar estado del sitio]
+    B --> C[Revisar órdenes y pagos]
+    C --> D[Revisar errores/logs]
+    D --> E[Actualizar plugins críticos si aplica]
+    E --> F[Registrar hallazgos]
+```
+
 ### 10) Build, release y despliegue
 - Estrategia de versionado.
 - Flujo de despliegue recomendado.
 - Pasos de rollback.
+
+```mermaid
+flowchart LR
+    Dev[Change local] --> Commit[Commit]
+    Commit --> PR[Pull Request]
+    PR --> Validacion[Validaciones]
+    Validacion --> Deploy[Despliegue]
+    Deploy --> Smoke[Smoke tests]
+    Smoke --> Ok[Operación normal]
+    Smoke -->|Falla| Rollback[Rollback]
+```
 
 ### 11) QA y pruebas
 - Pruebas mínimas por cambio (smoke, checkout, formularios, admin).
 - Evidencias requeridas (logs/capturas cuando aplique).
 - Criterio de aceptación.
 
+```mermaid
+flowchart TD
+    Cambio[Cambio aplicado] --> Smoke[Smoke home/producto]
+    Smoke --> Checkout[Test checkout]
+    Checkout --> Admin[Test admin básico]
+    Admin --> Evidencia[Registrar evidencia]
+    Evidencia --> Aprobacion[Aprobación]
+```
+
 ### 12) Observabilidad y monitoreo
 - Qué métricas vigilar (errores, latencia, conversión, stock, pedidos).
 - Dónde revisar errores (`error_log`, logs de plugins, logs WC).
 - Umbrales para alertamiento manual/automático.
+
+```mermaid
+flowchart LR
+    Logs[Logs PHP/WP/WC] --> Revision[Revisión diaria]
+    Metricas[Latencia/errores/conversión] --> Revision
+    Revision --> Alerta{¿Umbral excedido?}
+    Alerta -->|Sí| Incidente[Activar respuesta a incidente]
+    Alerta -->|No| Seguimiento[Seguimiento normal]
+```
 
 ### 13) Rendimiento
 - Objetivos de tiempo de carga.
@@ -95,6 +169,15 @@ Este repositorio contiene una instalación de WordPress para `agavebendito.com.m
 - Escalamiento y tiempos objetivo.
 - Guía de recuperación de operación.
 
+```mermaid
+flowchart TD
+    Deteccion[Detección del incidente] --> Clasificacion[Clasificar severidad]
+    Clasificacion --> Contencion[Contener impacto]
+    Contencion --> Recuperacion[Recuperar servicio]
+    Recuperacion --> RCA[Análisis causa raíz]
+    RCA --> Acciones[Acciones preventivas]
+```
+
 ### 17) Deuda técnica y roadmap
 - Deuda priorizada (seguridad, mantenimiento, limpieza de plugins).
 - Mejoras planeadas por trimestre.
@@ -105,15 +188,38 @@ Este repositorio contiene una instalación de WordPress para `agavebendito.com.m
 - Regla de actualización de README + AGENTS por cambio.
 - Política de revisión de cambios sensibles.
 
+```mermaid
+flowchart LR
+    Cambio[Propuesta de cambio] --> Revision[Revisión técnica]
+    Revision --> Doc[Actualizar README + AGENTS]
+    Doc --> Commit[Commit atómico]
+    Commit --> PR[PR con evidencia]
+```
+
 ### 19) Onboarding de colaboradores
 - Qué debe leer primero un nuevo integrante.
 - Accesos mínimos requeridos.
 - Errores comunes y cómo evitarlos.
 
+```mermaid
+flowchart TD
+    Nuevo[Nuevo colaborador] --> Leer[Leer README + AGENTS]
+    Leer --> Accesos[Solicitar accesos mínimos]
+    Accesos --> Setup[Validar entorno]
+    Setup --> PrimerCambio[Ejecutar primer cambio guiado]
+```
+
 ### 20) Bitácora de aprendizaje
 - Lecciones aprendidas por cambio.
 - Decisiones tomadas y trade-offs.
 - Riesgos a vigilar en siguientes iteraciones.
+
+```mermaid
+flowchart LR
+    Cambio[Cambio ejecutado] --> Leccion[Registrar lección]
+    Leccion --> Riesgo[Anotar riesgo]
+    Riesgo --> Siguiente[Definir acción siguiente]
+```
 
 ---
 
