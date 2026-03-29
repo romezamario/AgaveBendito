@@ -152,3 +152,11 @@ Un cambio se considera completo solo si:
 - [ ] README actualizado en dimensiones impactadas.
 - [ ] AGENTS.md actualizado con aprendizaje operativo.
 - [ ] Validación mínima registrada.
+
+### Actualización 2026-03-29
+- Cambio realizado: se ajustó el color de respaldo del mini-cart popup para que use `#9b5c8f` (equivalente `rgba(155, 92, 143, 0.97)`) en frontend dinámico y hoja de estilos base del plugin.
+- Dimensiones impactadas: [2, 3, 11, 15, 20]
+- Riesgo introducido: bajo; el cambio es visual y acotado al plugin `woocomm-popup-cart-ajax`.
+- Mitigación aplicada: se modificaron únicamente valores de color de fallback, sin tocar lógica de carrito ni flujo de checkout.
+- Validación ejecutada: búsqueda por código (`rg`) para confirmar el origen y verificación de diferencias con `git diff`.
+- Lección aprendida: en este plugin existen colores de fallback en PHP y CSS; conviene mantener ambos sincronizados para evitar inconsistencias visuales.

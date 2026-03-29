@@ -61,3 +61,12 @@ Cuando haya cambios, documentar como mínimo:
 - Riesgo/limitación: falta definir propietarios por dimensión y flujo de despliegue formal.
 - Aprendizaje clave para próximos agentes: cada cambio debe cerrar con doble actualización (`README.md` + `AGENTS.md`) y una lección concreta.
 - Acción sugerida siguiente: completar responsables, runbooks de incidentes y política de backups/restores.
+
+### 2026-03-29 — Ajuste de fallback de color en mini-cart
+- Contexto: se solicitó ubicar y ajustar el color del botón/área del mini-cart a `#9b5c8f`.
+- Cambio aplicado: alineación del fallback visual en `class-frontend.php` y `assets/css/frontend.css` hacia `rgba(155, 92, 143, 0.97)`.
+- Dimensiones README impactadas: [2, 3, 11, 15, 20].
+- Validación realizada: localización de claves `_wcspc_bg_colors` con `rg`, revisión de archivos afectados y diff de git.
+- Riesgo/limitación: el valor activo en producción puede estar sobrescrito por opciones guardadas en base de datos de WordPress.
+- Aprendizaje clave para próximos agentes: para cambios de color en este plugin, revisar defaults, CSS base y opciones persistidas en admin.
+- Acción sugerida siguiente: confirmar en `/wp-admin/admin.php?page=wcspc` y guardar ajustes para propagar el valor en la opción persistida.

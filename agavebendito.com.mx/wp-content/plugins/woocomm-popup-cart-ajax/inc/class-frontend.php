@@ -397,7 +397,7 @@ class ATA_WC_Smart_Popup_Cart_Frontend {
 			background-size:cover;
 		}
 		<?php
-		$bg = ( $this->getOptions['_wcspc_bg_colors'] != "" ) ? $this->hex2rgba( $this->getOptions['_wcspc_bg_colors'],'0.97' ) : '157, 94, 145, 0.97';
+		$bg = ( $this->getOptions['_wcspc_bg_colors'] != "" ) ? $this->hex2rgba( $this->getOptions['_wcspc_bg_colors'],'0.97' ) : '155, 92, 143, 0.97';
 		?>
 		.wcspc-area:after {
 			content: '';
