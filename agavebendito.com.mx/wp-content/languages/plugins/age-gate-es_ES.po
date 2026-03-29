@@ -1,0 +1,836 @@
+# Translation of Plugins - Age Gate - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Age Gate - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-08-25 19:07:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Age Gate - Stable (latest release)\n"
+
+#: src/Admin/Settings/Message.php:186
+msgid "Invalid date"
+msgstr "Fecha no válida"
+
+#: src/Admin/Settings/Content.php:49
+msgid "ALPHA"
+msgstr "ALFA"
+
+#: src/Resources/views/public/partials/decoration/loader.php:4
+msgid "Loading"
+msgstr "Cargando"
+
+#: src/Admin/Settings/Restriction.php:94
+msgid "High to low"
+msgstr "Ultimo a primero"
+
+#: src/Admin/Settings/Restriction.php:93
+msgid "Low to high"
+msgstr "Primero a ultimo"
+
+#: src/Admin/Settings/Restriction.php:88
+msgid "Year order"
+msgstr "Orden Año"
+
+#: src/Admin/Settings/Advanced.php:50
+msgid "By default, if Age Gate fails to get a response from the REST API it will then attempt an admin_ajax request"
+msgstr "Por defecto, si Age Gate falla a obtener una respuesta desde el REST API intentará una petición admin_ajax"
+
+#: src/Admin/Settings/Advanced.php:47
+msgid "Disable AJAX fallback"
+msgstr "Desactivar el respaldo AJAX"
+
+#: src/Resources/views/public/partials/form/errors.php:17
+msgid "Demonstration error message"
+msgstr "Demostración de mensaje de error"
+
+#: src/Resources/views/admin/troubleshooting.php:69
+msgid "See previous versions"
+msgstr "Ver las versiones anteriores"
+
+#: src/Resources/views/admin/troubleshooting.php:66
+msgid "Rollback the plugin"
+msgstr "Volver a la versión anterior del plugin"
+
+#: src/Resources/views/admin/troubleshooting.php:64
+msgid "This will remove any settings and restore the default ones so use with caution."
+msgstr "Esto eliminará todos los ajustes y restaurá los mismos por tanto utilizar con precaución."
+
+#: src/Resources/views/admin/troubleshooting.php:64
+msgid "Reset the plugin."
+msgstr "Restablecer el plugin"
+
+#: src/Resources/views/admin/troubleshooting.php:63
+msgid "Reinstall the plugin code."
+msgstr "Reinstalar el código del plugin"
+
+#: src/Resources/views/admin/troubleshooting.php:62
+msgid "More hardcore methods"
+msgstr "Más metodos extremos"
+
+#: src/Resources/views/admin/troubleshooting.php:60
+msgid "It could be something didn't update as expected."
+msgstr "Puede haber algo que no se actualizó como se esperaba."
+
+#: src/Resources/views/admin/troubleshooting.php:59
+msgid "This has been known to solve a lot of problems."
+msgstr "Esto se sabe que soluciona muchos problemas."
+
+#: src/Resources/views/admin/troubleshooting.php:58
+msgid "Non-destructive methods"
+msgstr "Métodos no destructivos"
+
+#: src/Resources/views/admin/troubleshooting.php:54
+msgid "Everything is broken!"
+msgstr "¡Todo está roto!"
+
+#: src/Resources/views/admin/troubleshooting.php:50
+msgid "Something else is not working"
+msgstr "Algo más no está funcionando"
+
+#: src/Resources/views/admin/troubleshooting.php:48
+msgid "It's being worked on, but there are only so many hours in a day."
+msgstr "Se está trabajando en ello, pero sólo hay unas pocas horas en un día."
+
+#: src/Resources/views/admin/troubleshooting.php:46
+msgid "There's missing documentation"
+msgstr "Hay documentación que falta"
+
+#: src/Resources/views/admin/troubleshooting.php:36
+msgid "The WYSIWYG editor has been removed in version 3 as it was generally problematic from a development point of view. The editor is now markdown based and much stricter on what is allowed. Shortcodes are still permitted."
+msgstr "El editor WYSIWYG se he eliminado en la versión 3 ya que generalmente era problemático desde un punto de vista del desarrollo. El editor ahora está basado en markdown y mucho más estricto de lo que es permitido. Los shortcodes todavía están permitidos."
+
+#: src/Resources/views/admin/troubleshooting.php:30
+msgid "My custom CSS isn't working"
+msgstr "Mi CSS personalizado no está funcionando"
+
+#: src/Resources/views/admin/troubleshooting.php:26
+msgid "My custom CSS is missing"
+msgstr "Mi CSS personalizado ha desaparecido"
+
+#: src/Resources/views/admin/troubleshooting.php:14
+msgid "I'm seeing an API error"
+msgstr "Estoy viendo un error de API"
+
+#: src/Resources/views/admin/tools.php:77
+msgid "Clear all meta data."
+msgstr "Borrar todos los metadatos"
+
+#: src/Resources/views/admin/tools.php:73
+#: src/Resources/views/admin/tools.php:84
+msgid "Reset"
+msgstr "Restablecer"
+
+#: src/Resources/views/admin/tools.php:72
+#: src/Resources/views/admin/tools.php:83
+msgid "Enter your password"
+msgstr "Introduce tu contraseña"
+
+#: src/Resources/views/admin/tools.php:66
+msgid "Restore Age Gate to default settings."
+msgstr "Restaurar Age Gate a sus valores por defecto."
+
+#: src/Resources/views/admin/tools.php:62
+msgid "Reset Age Gate"
+msgstr "Restablecer Age Gate"
+
+#: src/Resources/views/admin/tools.php:19
+msgid "Select all"
+msgstr "Seleccionar todo"
+
+#: src/Resources/views/admin/post/type/selected.php:4
+msgid "Restrict this content"
+msgstr "Restringir este contenido"
+
+#: src/Resources/views/admin/post/meta/age.php:2
+msgid "Set"
+msgstr "Establecer"
+
+#. translators: 1: Current content age restriction
+#: src/Resources/views/admin/post/meta-box.php:18
+msgid "Restricted to %s"
+msgstr "Restringido a %s"
+
+#: src/Resources/views/admin/post/meta-box.php:14
+msgid "Restricted to {0}"
+msgstr "Restringido a {0}"
+
+#. translators: 1: Current content age restriction
+#: src/Resources/views/admin/post/meta-box.php:14
+#: src/Resources/views/admin/post/meta-box.php:18
+msgid "Restricted"
+msgstr "Restringido"
+
+#: src/Resources/views/admin/partials/global/media-picker.php:8
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Resources/views/admin/partials/fields/message.php:8
+msgid "Remove legacy styles"
+msgstr "Eliminar estilos heredados"
+
+#: src/Resources/views/admin/partials/fields/image.php:13
+msgid "Remove"
+msgstr "Eliminar"
+
+#: src/Resources/views/admin/layouts/default.php:26
+msgid "Save settings"
+msgstr "Guardar ajustes"
+
+#: src/Admin/Settings/Tools.php:29
+msgid "Send feedback"
+msgstr "Enviar comentario"
+
+#: src/Admin/Settings/Restriction.php:147
+msgid "Remember time"
+msgstr "Recordar la hora"
+
+#: src/Admin/Settings/Advanced.php:57 src/Admin/Settings/Restriction.php:102
+msgid "BETA"
+msgstr "BETA"
+
+#: src/Admin/Settings/Restriction.php:101
+msgid "Not available on all devices"
+msgstr "No disponible en todos los dispositivos"
+
+#: src/Admin/Settings/Restriction.php:50
+msgid "Dropdown fields"
+msgstr "Campos desplegables"
+
+#: src/Admin/Settings/Content.php:220
+msgid "Day archives"
+msgstr "Archivos diarios"
+
+#: src/Admin/Settings/Content.php:219
+msgid "Month archives"
+msgstr "Archivos mensuales"
+
+#: src/Admin/Settings/Content.php:218
+msgid "Year archives"
+msgstr "Archivos anuales"
+
+#: src/Admin/Settings/Content.php:217
+msgid "Posts archive"
+msgstr "Archivo de entradas"
+
+#: src/Admin/Settings/Content.php:197 src/Admin/Settings/Content.php:198
+#: src/Admin/Settings/Content.php:257 src/Admin/Settings/Content.php:258
+msgid "Age"
+msgstr "Edad"
+
+#: src/Admin/Settings/Content.php:187 src/Admin/Settings/Content.php:188
+#: src/Admin/Settings/Content.php:247 src/Admin/Settings/Content.php:248
+msgid "Bypass"
+msgstr "Omisión"
+
+#: src/Admin/Settings/Content.php:95
+msgid "How Age Gate should handle certain author pages"
+msgstr "Como Age Gate debería gestionar ciertas páginas de autor"
+
+#: src/Admin/Settings/Content.php:89
+msgid "Archives"
+msgstr "Archivos"
+
+#: src/Admin/Settings/Content.php:81
+msgid "404 error"
+msgstr "Error 404"
+
+#: src/Admin/Settings/Content.php:78
+msgid "How Age Gate should handle certain error pages"
+msgstr "Como Age Gate debería gestionar ciertas páginas de error"
+
+#: src/Admin/Settings/Content.php:77
+msgid "Errors"
+msgstr "Errores"
+
+#: src/Admin/Settings/Content.php:70
+msgid "Taxonomies"
+msgstr "Taxonomías"
+
+#: src/Admin/Settings/Content.php:60
+msgid "Inherit taxonomies"
+msgstr "Taxonomías heredadas"
+
+#: src/Admin/Settings/Content.php:55
+msgid "Taxonomy Inheritance"
+msgstr "Herencia de taxonomía"
+
+#: src/Admin/Settings/Appearance.php:224
+msgid "Enables a stylable scrollbar if Age Gate overflows"
+msgstr "Activa una barra de desplazamiento configurable si Age Gate se desborda"
+
+#: src/Admin/Settings/Appearance.php:221
+msgid "Enable simplebar"
+msgstr "Activar barra simple"
+
+#: src/Admin/Settings/Appearance.php:181
+msgid "Fade"
+msgstr "Desvanecer"
+
+#: src/Admin/Settings/Appearance.php:85
+msgid "Y axis"
+msgstr "Eje Y"
+
+#: src/Admin/Settings/Appearance.php:80 src/Admin/Settings/Appearance.php:90
+msgid "Center"
+msgstr "Centrado"
+
+#: src/Admin/Settings/Appearance.php:75
+msgid "X axis"
+msgstr "Eje X"
+
+#: src/Admin/Settings/Advanced.php:197
+msgid "CSS style"
+msgstr "Estilo CSS"
+
+#: src/Admin/Settings/Advanced.php:178
+msgid "Styling"
+msgstr "Estilo"
+
+#: src/Admin/Settings/Advanced.php:154
+msgid "UA Strings"
+msgstr "Cadenas UA"
+
+#: src/Admin/Settings/Advanced.php:131
+msgid "Enable RTA tag"
+msgstr "Activar etiqueta RTA"
+
+#: src/Admin/Settings/Advanced.php:128
+msgid "Additional tags"
+msgstr "Etiquetas adicionales"
+
+#: src/Admin/Settings/Advanced.php:111
+msgid "Block certain actions from a user."
+msgstr "Bloquear ciertas acciones de un usuario"
+
+#: src/Admin/Settings/Advanced.php:110
+msgid "Interactions"
+msgstr "Interacciones"
+
+#: src/Admin/Settings/Advanced.php:16
+msgid "Method"
+msgstr "Método"
+
+#: src/Admin/Controller/ToolsController.php:40
+msgid "Tools"
+msgstr "Herramientas"
+
+#: src/Admin/Controller/MessageController.php:25
+msgid "Messages"
+msgstr "Mensajes"
+
+#: src/Admin/Controller/ContentController.php:25
+msgid "Content"
+msgstr "Contenido"
+
+#: src/Admin/Admin.php:72
+msgid "Something went wrong"
+msgstr "Algo fue mal"
+
+#: src/Admin/Admin.php:68
+msgid "Settings saved"
+msgstr "Ajustes guardados"
+
+#: src/Admin/Settings/Advanced.php:102
+msgid "Preload images"
+msgstr "Precargar imágenes"
+
+#: src/Admin/Settings/Appearance.php:57
+msgid "Blur other elements by"
+msgstr "Hacer borrosos otros elementos en"
+
+#: src/Admin/Settings/Advanced.php:123
+msgid "Removes users ability to open context menu or dev tools with F12. Other routes may stil be available for developers"
+msgstr "Quita a los usuarios la posibilidad de abrir el menú contextual o las herramientas de desarrollo con F12. Todavía podría haber otras rutas para los desarrolladores"
+
+#: src/Admin/Settings/Advanced.php:120
+msgid "Disable right click and F12"
+msgstr "Desactivar click derecho y F12"
+
+#: src/Admin/Settings/Advanced.php:114
+msgid "Trap focus"
+msgstr "Atrapar el enfoque"
+
+#: src/Admin/Settings/Restriction.php:100
+msgid "Stepped Inputs"
+msgstr "Introducción de datos por pasos"
+
+#: src/Admin/Settings/Message.php:42
+msgid "Aria label"
+msgstr "Etiqueta Aria"
+
+#: src/Admin/Settings/Advanced.php:66
+msgid "Munge options"
+msgstr "Opciones de manipulación de datos"
+
+#: src/Admin/Settings/Advanced.php:170
+msgid "Cookie name"
+msgstr "Nombre de la cookie"
+
+#: src/Admin/Settings/Restriction.php:76
+msgid "No then Yes"
+msgstr "No y luego sí"
+
+#: src/Admin/Settings/Restriction.php:77
+msgid "Yes then No"
+msgstr "Sí luego no"
+
+#: src/Admin/Settings/Restriction.php:79
+msgid "Button order"
+msgstr "Orden del botón"
+
+#: src/Admin/Settings/Appearance.php:79
+msgid "Right"
+msgstr "Derecha"
+
+#: src/Admin/Settings/Appearance.php:78
+msgid "Left"
+msgstr "Izquierda"
+
+#: src/Admin/Settings/Appearance.php:89
+msgid "Bottom"
+msgstr "Abajo"
+
+#: src/Admin/Settings/Appearance.php:88
+msgid "Top"
+msgstr "Arriba"
+
+#: src/Admin/Settings/Appearance.php:71
+msgid "Background position"
+msgstr "Posición del fondo"
+
+#: src/Admin/Settings/Message.php:96
+msgid "Year label"
+msgstr "Etiqueta del año"
+
+#: src/Admin/Settings/Message.php:87
+msgid "Month label"
+msgstr "Etiqueta del mes"
+
+#: src/Admin/Settings/Message.php:78
+msgid "Day label"
+msgstr "Etiqueta del día"
+
+#: src/Admin/Settings/Advanced.php:150
+msgid "You can add the user agent string of any bots that are not automatically picked up. Add 1 per line."
+msgstr "Puedes añadir la cadena del agente de usuario de cualquier bot que no se recoja automáticamente. Añade uno por línea."
+
+#: src/Admin/Settings/Advanced.php:148
+msgid "Custom bots"
+msgstr "Bots personalizados"
+
+#: src/Resources/views/admin/tools.php:44
+msgid "Import"
+msgstr "Importar"
+
+#: src/Resources/views/admin/tools.php:13
+msgid "Export"
+msgstr "Exportar"
+
+#: src/Admin/Settings/Appearance.php:178
+msgid "In JavaScript transition Age Gate out"
+msgstr "En JavaScript la transición de salida de la verificación de edad"
+
+#: src/Admin/Settings/Appearance.php:185
+msgid "Slide right"
+msgstr "Deslizar a la derecha"
+
+#: src/Admin/Settings/Appearance.php:184
+msgid "Slide left"
+msgstr "Deslizar a la izquierda"
+
+#: src/Admin/Settings/Appearance.php:183
+msgid "Slide down"
+msgstr "Deslizar abajo"
+
+#: src/Admin/Settings/Appearance.php:182
+msgid "Slide up"
+msgstr "Deslizar arriba"
+
+#: src/Admin/Settings/Appearance.php:175
+msgid "Transition"
+msgstr "Transición"
+
+#: src/Admin/Admin.php:125
+msgid "What&rsquo;s new?"
+msgstr "¿Qué hay de nuevo?"
+
+#: src/Resources/views/admin/tools.php:9
+msgid "Import/Export"
+msgstr "Importar/Exportar"
+
+#: src/Admin/Post/ListTable.php:94
+msgid "Age Gate: Unrestrict"
+msgstr "Age Gate: sin restricción"
+
+#: src/Admin/Post/ListTable.php:93
+msgid "Age Gate: Restrict"
+msgstr "Age Gate: restringir"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: age-gate.php
+msgid "https://agegate.io/"
+msgstr "https://agegate.io/"
+
+#: src/Admin/Settings/Advanced.php:165
+msgid "Anonymous Age Gate"
+msgstr "Verificación de edad anónima"
+
+#: src/Admin/Settings/Message.php:146
+msgid "Your browser does not support cookies, you may experience problems entering this site"
+msgstr "Tu navegador no acepta cookies, puedes experimentar problemas al entrar en este sitio"
+
+#: src/Admin/Settings/Message.php:141
+msgid "No cookies message"
+msgstr "Mensaje de sin cookies"
+
+#: src/Admin/Controller/AccessController.php:21
+msgid "Access"
+msgstr "Acceso"
+
+#: src/Admin/Controller/AdvancedController.php:18
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: src/Admin/Controller/AppearanceController.php:19
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: src/Admin/Controller/RestrictionController.php:40
+msgid "Restrictions"
+msgstr "Restricciones"
+
+#: src/Admin/Settings/Message.php:137
+msgid "Submit"
+msgstr "Enviar"
+
+#: src/Resources/views/admin/term/edit-wrapper.php:2
+msgid "Age Restriction"
+msgstr "Restricción de edad"
+
+#: src/Admin/Settings/Restriction.php:170
+msgid "Rechallenge"
+msgstr "Verificar de nuevo"
+
+#: src/Admin/Settings/Restriction.php:144
+msgid "Minutes"
+msgstr "Minutos"
+
+#: src/Admin/Settings/Restriction.php:143
+msgid "Hours"
+msgstr "Horas"
+
+#: src/Admin/Settings/Restriction.php:142
+msgid "Days"
+msgstr "Días"
+
+#: src/Admin/Settings/Restriction.php:43
+msgid "Varied ages"
+msgstr "Edades variadas"
+
+#: src/Admin/Settings/Restriction.php:24
+msgid "Default age"
+msgstr "Edad por defecto"
+
+#: src/Admin/Settings/Message.php:69
+msgid "No button text"
+msgstr "Texto del botón para NO"
+
+#: src/Admin/Settings/Message.php:60
+msgid "Yes button text"
+msgstr "Texto del botón «Sí»"
+
+#: src/Admin/Settings/Message.php:33
+msgid "Remember me text"
+msgstr "Texto de «Recuérdame»"
+
+#: src/Admin/Settings/Appearance.php:196
+msgid "Auto tab inputs"
+msgstr "Tabulado automático en los campos"
+
+#: src/Admin/Settings/Appearance.php:209
+msgid "Custom page title"
+msgstr "Título de la página personalizado"
+
+#: src/Admin/Settings/Appearance.php:192
+msgid "Add viewport meta to Age Gate page"
+msgstr "Añadir meta del viewport a la página de verificación de edad"
+
+#: src/Admin/Settings/Appearance.php:115
+msgid "Foreground colour opacity"
+msgstr "Opacidad del color de primer plano"
+
+#: src/Admin/Settings/Appearance.php:100
+msgid "Background image opacity"
+msgstr "Opacidad de la imagen de fondo"
+
+#: src/Admin/Settings/Appearance.php:47
+msgid "Background colour opacity"
+msgstr "Opacidad del color de fondo"
+
+#: src/Resources/views/admin/partials/fields/image.php:14
+msgid "Select image"
+msgstr "Seleccionar Imagen"
+
+#: src/Admin/Settings/Advanced.php:182
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: src/Admin/Settings/Content.php:17
+msgid "Do not show Age Gate publish actions for the following post types"
+msgstr "No mostrar acciones de publicación de Age Gate para los siguientes tipos de contenido"
+
+#: src/Admin/Settings/Content.php:16
+msgid "Post Types"
+msgstr "Tipos de contenido"
+
+#. translators: Indivdual age label
+#: src/Resources/views/admin/access.php:15
+msgid "Change age for indiviual content"
+msgstr "Cambiar edad en contenidos individuales"
+
+#. translators: 1: Current content age restriction
+#: src/Resources/views/admin/post/list-column.php:9
+#: src/Resources/views/admin/post/list-column.php:12
+#: src/Resources/views/admin/post/meta-box.php:14
+#: src/Resources/views/admin/post/meta-box.php:18
+msgid "Unrestricted"
+msgstr "No restringido"
+
+#: src/Resources/views/admin/post/meta-box.php:21
+msgid "Change"
+msgstr "Cambiar"
+
+#: src/Resources/views/admin/post/list-column.php:4
+#: src/Resources/views/admin/post/list-column.php:7
+msgid "Restricted to"
+msgstr "Restringido a"
+
+#: src/Admin/Admin.php:119 src/Admin/Settings/Restriction.php:105
+#: src/Resources/views/admin/default.php:49
+msgid "Documentation"
+msgstr "Documentación"
+
+#: src/Admin/Update.php:90 src/Admin/Update.php:97
+msgid "Enable update"
+msgstr "Habilitar actualización"
+
+#: src/Admin/Update.php:90
+msgid "The update link has been disabled just to be safe, but if you are sure you want to update you can enable the update link here: "
+msgstr "El enlace de actualización ha sido desactivado para estar seguros, pero si estás seguro de que quieres actualizar puedes permitir el enlace de actualización aquí: "
+
+#: src/Admin/Update.php:89
+msgid "It is advised that you do not update on a live website and test locally or on a staging site first."
+msgstr "Se aconseja que no se actualice en una web en vivo y que se pruebe primero localmente o en un sitio de ensayo."
+
+#: src/Admin/Update.php:88
+msgid "This is a milestone release of Age Gate that could have unexpected results on your site."
+msgstr "Esta es una versión de Age Gate que podría tener resultados inesperados en tu sitio."
+
+#: src/Admin/Update.php:82
+msgid "While it should be safe to update, it is advised that you test locally or on a staging site first."
+msgstr "Aunque debería ser seguro actualizarlo, se aconseja que primero lo pruebes localmente o en un sitio de ensayo."
+
+#: src/Admin/Update.php:81 src/Admin/Update.php:88 src/Admin/Update.php:97
+msgid "WARNING"
+msgstr "ADVERTENCIA"
+
+#: src/Admin/Settings/Restriction.php:122
+#: src/Admin/Settings/Restriction.php:136
+msgid "Remember length"
+msgstr "Duración a recordar"
+
+#: src/Admin/Settings/Appearance.php:201
+msgid "Change the page title"
+msgstr "Cambiar el título de la página"
+
+#: src/Admin/Settings/Message.php:51
+msgid "Yes/No sub question"
+msgstr "Subpregunta de Sí/NO"
+
+#: src/Admin/Admin.php:103
+msgid "Donate"
+msgstr "Donar"
+
+#: src/Admin/Settings/Restriction.php:155
+msgid "Auto check remember me"
+msgstr "Marcar automáticamente el «Recuérdame»"
+
+#: src/Admin/Settings/Appearance.php:189
+msgid "Viewport meta tag"
+msgstr "Etiqueta meta del viewport"
+
+#: src/Admin/Settings/Message.php:177
+msgid "Generic error"
+msgstr "Error genérico"
+
+#: src/Admin/Settings/Message.php:159
+msgid "Invalid inputs"
+msgstr "Datos introducidos no válidos"
+
+#: src/Resources/views/admin/post/type/all.php:4
+msgid "Do not age restrict this content"
+msgstr "No restringir por edad este contenido"
+
+#. Author of the plugin
+#: age-gate.php
+msgid "Phil Baker"
+msgstr "Phil Baker"
+
+#. Description of the plugin
+#: age-gate.php
+msgid "A customisable age gate to block content from younger people"
+msgstr "Una puerta de edad personalizable contenido de bloque de jóvenes"
+
+#: src/Admin/Settings/Message.php:119
+msgid "MM"
+msgstr "MM"
+
+#: src/Admin/Settings/Message.php:92
+msgid "Month"
+msgstr "Mes"
+
+#: src/Admin/Settings/Message.php:110
+msgid "DD"
+msgstr "DD"
+
+#: src/Admin/Settings/Message.php:83
+msgid "Day"
+msgstr "Día"
+
+#: src/Admin/Settings/Message.php:128
+msgid "YYYY"
+msgstr "AAAA"
+
+#: src/Admin/Settings/Message.php:101
+msgid "Year"
+msgstr "Año"
+
+#: src/Admin/Settings/Message.php:74
+msgid "No"
+msgstr "No"
+
+#: src/Admin/Settings/Message.php:65
+msgid "Yes"
+msgstr "Sí"
+
+#: src/Admin/Settings/Message.php:56
+msgid "Are you over {age} years of age?"
+msgstr "¿Tienes más de {age} años?"
+
+#: src/Admin/Settings/Message.php:38
+msgid "Remember me"
+msgstr "Recuérdame"
+
+#: src/Admin/Settings/Message.php:182
+msgid "An error occurred, please try again"
+msgstr "Se ha producido un error, inténtalo otra vez."
+
+#: src/Admin/Settings/Message.php:173
+msgid "You are not old enough to view this content"
+msgstr "No tienes la edad suficiente para ver este contenido"
+
+#: src/Admin/Settings/Message.php:164
+msgid "Your input was invalid"
+msgstr "Lo que has introducido no es válido"
+
+#: src/Admin/Settings/Appearance.php:211
+msgid "Age Verification"
+msgstr "Age Verification"
+
+#: src/Resources/views/admin/partials/global/media-picker.php:9
+msgid "Select"
+msgstr "Seleccionar"
+
+#: src/Admin/Settings/Message.php:150
+msgid "Additional content"
+msgstr "Contenido adicional"
+
+#: src/Admin/Settings/Appearance.php:133
+msgid "Use plugin style on the front end"
+msgstr "Utilizar estilos de plugin en la parte visible de la web"
+
+#: src/Admin/Settings/Appearance.php:130
+msgid "Layout"
+msgstr "Diseño"
+
+#: src/Admin/Settings/Appearance.php:125
+msgid "Text colour"
+msgstr "Color de texto"
+
+#: src/Admin/Settings/Appearance.php:110
+msgid "Foreground colour"
+msgstr "Color de primer plano"
+
+#: src/Admin/Settings/Appearance.php:66
+msgid "Background image"
+msgstr "Imagen de fondo"
+
+#: src/Admin/Settings/Appearance.php:42
+msgid "Background colour"
+msgstr "Color de fondo"
+
+#: src/Admin/Settings/Message.php:24
+msgid "Sub headline"
+msgstr "[Subtítulo]"
+
+#: src/Admin/Settings/Message.php:15
+msgid "Headline"
+msgstr "Titular"
+
+#: src/Admin/Settings/Message.php:132
+msgid "Submit button text"
+msgstr "Texto del botón enviar"
+
+#: src/Admin/Settings/Appearance.php:14
+msgid "Logo"
+msgstr "Logotipo"
+
+#: src/Admin/Settings/Restriction.php:164
+msgid "Ignore logged in"
+msgstr "Ignorar conectados"
+
+#: src/Admin/Settings/Restriction.php:66
+msgid "Date format"
+msgstr "Formato de fecha"
+
+#: src/Admin/Settings/Restriction.php:118
+msgid "Remember"
+msgstr "Recordar"
+
+#: src/Admin/Settings/Restriction.php:49
+msgid "Input fields"
+msgstr "Campos de entrada"
+
+#: src/Admin/Settings/Restriction.php:53
+msgid "Validate age using"
+msgstr "Validar edad utilizando"
+
+#: src/Admin/Settings/Restriction.php:32
+msgid "Selected content"
+msgstr "Contenido seleccionado"
+
+#: src/Admin/Settings/Restriction.php:31
+msgid "All content"
+msgstr "Todo el contenido"
+
+#: src/Admin/Settings/Content.php:192 src/Admin/Settings/Content.php:193
+#: src/Admin/Settings/Content.php:252 src/Admin/Settings/Content.php:253
+#: src/Admin/Settings/Restriction.php:35
+msgid "Restrict"
+msgstr "Restringir"
+
+#: src/Admin/Admin.php:102
+msgid "Settings"
+msgstr "Ajustes"
+
+#. Plugin Name of the plugin
+#: age-gate.php src/Admin/Post/Edit.php:115 src/Admin/Post/ListTable.php:48
+#: src/Admin/User/Toolbar.php:64
+#: src/Resources/views/admin/partials/global/admin-toolbar.php:2
+msgid "Age Gate"
+msgstr "Barrera de edad"
